@@ -1,10 +1,9 @@
 /* General element selectors */
 body {
-  display: flex;
-  flex:auto;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;;
   margin: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -17,10 +16,11 @@ header {
   align-items: center;
   font-weight: bolder;
   margin: 0;
+
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 ul {
@@ -49,15 +49,20 @@ footer {
 /* class selectors */
 /* FIX1: Need to keep header title and link text to
 sides of the header, currently in the middle for smaller screen*/
+header > ul > li {
+  font-size: 18px;
+}
+
 .container1 {
   display: flex;
   justify-content:center;
   background-color: #1f2937;
-  padding: 10px;
+  padding: 45px;
   color: white;
-  max-height: 400px;
-  gap: 5%;
+  max-height: 450px;
+  gap: 10%;
 }
+
 
 .container1 > .text {
   display: flex;
@@ -65,29 +70,29 @@ sides of the header, currently in the middle for smaller screen*/
   /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
-  width: auto;
-  padding-left: 20px;
+  width: 22%;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 20px;
 }
 
 .text > p {
   margin-top: 0;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 .text > button {
-  font-size: 8px;
-  width: 50px;
+  font-size: 1em;
+  width: 5em;
   color: white;
   background-color: #3882f6;
   border: 2px solid #3882f6;
   border-radius: 3px;
 }
 .container1 > .image1 {
-  width: 50%;
-  height: 20%;
+  max-width: 38em;
   padding: 25px;
+  box-sizing: border-box;
 }
 
 .container2 {
@@ -96,11 +101,12 @@ sides of the header, currently in the middle for smaller screen*/
   justify-content: center;
   padding: 5%;
   align-items: center;
+  gap: 2em;
 }
 
 .container2 > .boxes {
   display: flex;
-  gap: 20px;
+  gap: 4em;
 }
 
 .container2 > .boxes >  .product {
@@ -112,8 +118,8 @@ sides of the header, currently in the middle for smaller screen*/
   border:none;
   border-radius: 5px;
   padding: 0;
-  max-width: 100px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .box > img {
@@ -124,7 +130,7 @@ sides of the header, currently in the middle for smaller screen*/
 
 .product > p {
   margin-top: 4px ;
-  font-size: 10px;
+  font-size: 1.5em;
 }
 
 .container3 {
@@ -196,5 +202,5 @@ sides of the header, currently in the middle for smaller screen*/
 }
 
 footer > p {
-  font-size: 8px;
+  font-size: 18px;
 }
